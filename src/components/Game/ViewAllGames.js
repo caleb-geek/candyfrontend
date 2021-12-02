@@ -8,7 +8,7 @@ const ViewAllGames = () => {
     const [games, setGames] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:5000/api/game')
+    axios.get('http://68.183.72.41:8000/api/game')
     .then((result)=>{
       setGames(result.data)
      

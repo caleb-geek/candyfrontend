@@ -13,6 +13,7 @@ import CreateGame from './components/Game/CreateGame';
 import StartGame from './components/Game/StartGame';
 import ViewAllGames from './components/Game/ViewAllGames';
 import NewScores from './components/Game/NewScores';
+import Allusers from './components/Allusers';
 
 function App() {
 
@@ -27,14 +28,14 @@ function App() {
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/rules" component={Rules} />
-        <Route exact path="/admin" component={Dashboard} />
+        <PrivateRoute exact path="/admin" component={Dashboard} />
         <Route exact path="/game" component={Game} />
         <Route exact path="/creategame" component={CreateGame} />
         <Route exact path="/startgame/:id" component={StartGame} />
         <Route exact path="/viewallgames" component={ViewAllGames}/>
         <Route exact path="/newscores" component={NewScores}/>
-        
-      
+        <Route exact path="/viewallusers" component={Allusers}/>
+
         
         
         

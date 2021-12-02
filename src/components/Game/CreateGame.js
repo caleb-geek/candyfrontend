@@ -15,7 +15,7 @@ const [error,setError] = useState("")
         },
         onSubmit:values => {
             
-             axios.post ('http://127.0.0.1:5000/api/game', values)
+             axios.post ('http://68.183.72.41:8000/api/game', values)
               .then((response) => {
                 history.push('/viewallgames')
                   

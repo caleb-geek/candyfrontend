@@ -78,8 +78,8 @@ const [error,setError] = useState("")
      
      
    
-   <Link to="/register" className="btn-reg">Forgot Password</Link>
-     <Link to="/register" className="btn-reg">Create New Account</Link>
+   {/* <Link to="/register" className="btn-reg">Forgot Password</Link>
+     <Link to="/register" className="btn-reg">Create New Account</Link> */}
    
       </form>
        </div>

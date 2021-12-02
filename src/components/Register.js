@@ -23,7 +23,7 @@ const Register = (props) => {
               axios.post ('http://localhost:5000/api/user', values)
               .then((response) => {
                 setSuccess({message:"Account Created Successfully"})
-                props.history.push('/login')
+                props.history.push('/viewallusers')
             }).catch((err)=>{
                setError({message:err.response.message})
             })
@@ -135,15 +135,7 @@ const Register = (props) => {
      {formik.touched.password && formik.errors.password?<div className="error">{formik.errors.password}</div>:null}
      </div>
      
-   
-     <a href="#" type="submit">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Create Account
-    </a>
-
+     <input className="sub-btn"  type="submit" value="Create Account"/>
      <Link to="/register" className="btn-reg">Login Here</Link>
    
       

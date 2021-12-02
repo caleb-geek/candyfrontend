@@ -12,7 +12,7 @@ const [users,setUsers] = useState([])
 
 
 useEffect(() => {
-  axios.get('http://127.0.0.1:5000/api/user')
+  axios.get('http://68.183.72.41:8000api/user')
   .then((result)=>{
     setUsers(result.data)
    
@@ -27,7 +27,7 @@ return {userId:item.id,gameId:id,noOfkills:0,playerStatus:"alive"}
 const handleCreateGame = () =>{
   let data =JSON.stringify({scores:values})
   console.log(data)
-  axios.post ('http://127.0.0.1:5000/api/score',data)
+  axios.post ('http://68.183.72.41:8000/api/score',data)
   .then((response) => {
 
     history.push('/newscores')
