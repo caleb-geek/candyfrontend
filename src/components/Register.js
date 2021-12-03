@@ -20,7 +20,7 @@ const Register = (props) => {
         },
         onSubmit:values => {
             
-              axios.post ('http://localhost:5000/api/user', values)
+              axios.post ('http://68.183.72.41:8000/api/user', values)
               .then((response) => {
                 setSuccess({message:"Account Created Successfully"})
                 props.history.push('/viewallusers')

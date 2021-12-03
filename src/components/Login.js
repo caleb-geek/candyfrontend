@@ -16,11 +16,11 @@ const [error,setError] = useState("")
             password:''
         },
         onSubmit:values => {
-             axios.post ('http://localhost:5000/api/user/login', values)
+             axios.post ('http://68.183.72.41:8000/api/user/login', values)
               .then((response) => {
                const {token} = response.data
                 setToken(token)
-                history.push('/')
+                history.push('/admin')
                   
               }).catch((err)=>{
                  
