@@ -28,7 +28,7 @@ function App() {
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/rules" component={Rules} />
-        <PrivateRoute exact path="/admin" component={Dashboard} />
+        <Route exact path="/admin" component={Dashboard} />
         <Route exact path="/game" component={Game} />
         <Route exact path="/creategame" component={CreateGame} />
         <Route exact path="/startgame/:id" component={StartGame} />
